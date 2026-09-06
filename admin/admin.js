@@ -2,7 +2,7 @@
 // Each half below only wires itself up if that page's elements exist,
 // so this one file works correctly no matter which page loaded it.
 
-const API_URL = 'http://localhost:3000';
+const API_URL = 'http://booking-system-production-fa13.up.railway.app;
 
 // ================================================================
 // LOGIN PAGE
