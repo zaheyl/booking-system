@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sunshine Travel Co. &mdash; Book your next adventure</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">Sunshine Travel Co.</div>
+  <nav>
+    <a href="#products">Activities</a>
+    <a href="#concierge">Concierge</a>
+    <a href="#concierge">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="eyebrow">Small island tours, done right</div>
+  <h1>Book a day you'll <em>actually</em> remember.</h1>
+  <p class="lede">
+    Hand-picked island tours, sunset cruises, and kayaking trips.
+    Small groups, local guides, and live availability &mdash; pick your
+    dates and see exactly what's free.
+  </p>
+  <div class="cta-row">
+    <a href="#products" class="btn">See what's available</a>
+    <a href="#concierge" class="btn-ghost">How it works</a>
+  </div>
+</section>
+
+<svg class="tideline to-panel" viewBox="0 0 1200 40" preserveAspectRatio="none" aria-hidden="true">
+  <path d="M0,20 C100,0 200,40 300,20 C400,0 500,40 600,20 C700,0 800,40 900,20 C1000,0 1100,40 1200,20 L1200,40 L0,40 Z"></path>
+</svg>
+
+<section class="features">
+  <div class="feature">
+    <span class="mark">01 &middot; Guides</span>
+    <h3>Local, licensed operators</h3>
+    <p>Every tour is run by a named local guide, not a faceless agency.</p>
+  </div>
+  <div class="feature">
+    <span class="mark">02 &middot; Booking</span>
+    <h3>Live availability</h3>
+    <p>Choose your dates and anything already taken is marked straight away.</p>
+  </div>
+  <div class="feature">
+    <span class="mark">03 &middot; Payment</span>
+    <h3>Pay by QR, confirmed by email</h3>
+    <p>Scan, pay, and we'll email your confirmation within 24 hours.</p>
+  </div>
+</section>
+
+<section class="products-section" id="products">
+  <div class="products-heading">
+    <span class="mark">The reservations desk</span>
+    <h2>Choose your dates</h2>
+    <p class="sub">Every listing below reacts to the dates you set here &mdash; anything already booked is marked, not hidden.</p>
+  </div>
+
+  <!-- date range: everything below reacts to these two fields -->
+  <div class="date-bar">
+    <div class="date-field">
+      <label for="fromDate">From</label>
+      <input type="date" id="fromDate">
+    </div>
+    <div class="date-field">
+      <label for="toDate">Until</label>
+      <input type="date" id="toDate">
+    </div>
+    <button class="btn" id="checkBtn">Check availability</button>
+  </div>
+
+  <p class="date-summary" id="dateSummary"></p>
+
+  <!-- product cards get inserted here by script.js -->
+  <div id="carousel" class="product-grid">
+    <p id="loadingText" class="grid-note">Loading activities...</p>
+  </div>
+</section>
+
+<svg class="tideline to-ocean flip" viewBox="0 0 1200 40" preserveAspectRatio="none" aria-hidden="true">
+  <path d="M0,20 C100,0 200,40 300,20 C400,0 500,40 600,20 C700,0 800,40 900,20 C1000,0 1100,40 1200,20 L1200,40 L0,40 Z"></path>
+</svg>
+
+<section class="concierge" id="concierge">
+  <div>
+    <span class="mark">Need a hand?</span>
+    <h2>Our concierge is one message away.</h2>
+    <p>
+      Questions about a tour, a group booking, or your payment &mdash;
+      reach us directly and a member of the team will get back to you.
+      Once you book, you'll get a QR code to pay and an email
+      confirmation within 24 hours.
+    </p>
+  </div>
+  <div class="concierge-card">
+    <div class="row"><span>Response time</span><span>Within 24 hours</span></div>
+    <div class="row"><span>Payment method</span><span>QR transfer</span></div>
+    <div class="row"><span>Group bookings</span><span>Contact us directly</span></div>
+    <div class="row"><span>Cancellations</span><span>Handled by our team</span></div>
+  </div>
+</section>
+
+<footer>
+  &copy; 2026 Sunshine Travel Co.
+</footer>
+
+<script src="config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

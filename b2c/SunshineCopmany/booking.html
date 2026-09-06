@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Confirm your booking</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="booking-page">
+
+  <header>
+    <div class="logo">Sunshine Travel Co.</div>
+    <nav><a href="index.html">All activities</a></nav>
+  </header>
+
+  <div class="detail-container" id="detailContainer">
+    <p class="grid-note">Loading...</p>
+  </div>
+
+  <!-- QR payment popup -->
+  <div class="qr-modal-overlay hidden" id="qrModal">
+    <div class="qr-modal">
+      <h3>Scan to pay</h3>
+      <p class="qr-sub">Your booking is held &mdash; complete payment to confirm it.</p>
+      <img id="qrImage" alt="Payment QR code">
+      <p class="qr-note">
+        Please pay through QR payment. Upon payment received, you will be
+        notified through email within 24 hours.
+      </p>
+      <div class="qr-modal-buttons">
+        <button class="btn-cancel" id="qrCloseBtn">Close</button>
+        <button class="btn-confirm" id="qrContactBtn">Contact us</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="config.js"></script>
+  <script src="booking.js"></script>
+</body>
+</html>

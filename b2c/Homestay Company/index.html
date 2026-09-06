@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Barber Retreat and Resort Co. &mdash; Book your visit</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wordmark">
+    <span class="wordmark-name">Barber Retreat &amp; Resort Co.</span>
+    <span class="wordmark-place" id="wordmarkPlace">&nbsp;</span>
+  </div>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#place">The retreat</a>
+    <a href="#getting-here">Getting here</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <p class="kicker">Sharp cuts, slow mornings</p>
+  <h1>A trim, a stay,<br>or both.</h1>
+  <p class="lede">
+    Barber Retreat &amp; Resort Co. pairs a proper barber's chair with a
+    place to sit still afterwards. Choose below and see what's open.
+  </p>
+</section>
+
+<!-- the planner adapts to whichever scheduling mode the admin has set:
+     Day mode shows a date range, Hours mode shows a single date -->
+<section class="planner" id="services">
+  <div class="planner-inner">
+
+    <div id="dayModePlanner" hidden>
+      <div class="planner-inner" style="margin:0;padding:0;">
+        <div class="date-field">
+          <label for="checkIn">Arrival</label>
+          <input type="date" id="checkIn">
+        </div>
+        <div class="planner-arrow" aria-hidden="true">&rarr;</div>
+        <div class="date-field">
+          <label for="checkOut">Departure</label>
+          <input type="date" id="checkOut">
+        </div>
+      </div>
+    </div>
+
+    <div id="hourModePlanner" hidden>
+      <div class="date-field">
+        <label for="visitDate">Choose a date</label>
+        <input type="date" id="visitDate">
+      </div>
+    </div>
+
+    <div class="planner-meta">
+      <span id="nightCount" class="night-count"></span>
+      <span class="mode-hint" id="modeHint"></span>
+      <button class="btn" id="checkBtn">Show what's free</button>
+    </div>
+  </div>
+</section>
+
+<section class="services-section">
+  <div id="sectionGroups">
+    <p class="list-note">Loading services&hellip;</p>
+  </div>
+</section>
+
+<section class="place" id="place">
+  <div class="place-item">
+    <span class="place-mark">The chair</span>
+    <p>Hot towel, straight razor finish, no rushing. Every appointment gets its full time, not a minute less.</p>
+  </div>
+  <div class="place-item">
+    <span class="place-mark">The stay</span>
+    <p>Rooms and packages for guests who'd rather not rush off after their appointment.</p>
+  </div>
+  <div class="place-item" id="getting-here">
+    <span class="place-mark">Getting here</span>
+    <p>Details on parking and directions are sent with your booking confirmation.</p>
+  </div>
+</section>
+
+<footer>
+  <span>&copy; 2026 Barber Retreat and Resort Co.</span>
+  <span class="foot-note" id="footAddress"></span>
+</footer>
+
+<script src="config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
