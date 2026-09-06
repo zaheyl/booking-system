@@ -2,7 +2,7 @@
 // Every number, row and calendar cell on this page comes from the
 // same bookings the B2C site creates.
 
-const API_URL = 'http://localhost:3000';
+const API_URL = 'http://booking-system-production-fa13.up.railway.app;
 
 const token = sessionStorage.getItem('token');
 const company = JSON.parse(sessionStorage.getItem('company') || 'null');
