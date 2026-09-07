@@ -1,6 +1,6 @@
 // login.js (B2B login page)
 
-const API_URL = 'http://booking-system-production-fa13.up.railway.app';
+const API_URL = 'https://booking-system-production-fa13.up.railway.app';
 
 document.getElementById('loginBtn').addEventListener('click', doLogin);
 
