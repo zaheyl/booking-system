@@ -2,7 +2,7 @@ From the project's backend folder (where node_modules has bcryptjs):
 
 bash
     cd path/to/backend
-    node -e "require('bcryptjs').hash('newpassword123', 12).then(h => console.log(h))"
+    node -e "require('bcryptjs').hash('adminssz', 12).then(h => console.log(h))"
 
 That prints a hash like $2b$12$abc...xyz. Copy it.
 

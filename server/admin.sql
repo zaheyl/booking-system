@@ -24,8 +24,7 @@ USE booking_system;
 INSERT INTO platform_admins (email, password_hash)
 VALUES (
   'admin@ssz.com',
-  '$2b$12$kRED5mwEGC9SaR1jlFEA7uKPC6OQyNAYvAKAVrKcn9OfMeZBmkU7u
-'
+  '$2b$12$sqeH9ZhyYw3mIqXQSw2Sq.iJsTMRbXTex/zzXJxNKP8YDdKw5vLzq'
 )
 ON DUPLICATE KEY UPDATE
   password_hash = VALUES(password_hash);
