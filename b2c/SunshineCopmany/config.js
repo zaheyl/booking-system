@@ -5,7 +5,7 @@
 // company's products or bookings.
 
 window.SITE = {
-  API_URL: 'http://booking-system-production-fa13.up.railway.app',
+  API_URL: 'https://booking-system-production-fa13.up.railway.app',
   COMPANY_ID: 1,                     // Sunshine Travel Co.'s row in `companies`
   FALLBACK_WHATSAPP: '60123456789'   // used only if the company record has none set
 };
